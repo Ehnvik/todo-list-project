@@ -1,0 +1,12 @@
+@use "../components/" as c;
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: c.$primaryFont;
+}
+
+* {
+  box-sizing: border-box;
+}

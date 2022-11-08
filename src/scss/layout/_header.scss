@@ -1,0 +1,52 @@
+@use "../components/" as c;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 20vh;
+  background-color: lightgray;
+  font-family: c.$primaryFont;
+  width: 100%;
+  &__title {
+    font-size: 45px;
+    font-family: c.$primaryFont;
+    color: lightseagreen;
+    margin-bottom: 0;
+  }
+  &__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    &__input {
+      height: 40px;
+      font-family: c.$primaryFont;
+      font-size: 18px;
+      outline: auto;
+      outline-color: lightseagreen;
+      border: 6px solid lightseagreen;
+    }
+    &__button {
+      height: 35px;
+      width: 87px;
+      cursor: pointer;
+      font-family: c.$primaryFont;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      background-color: lightseagreen;
+      outline: auto;
+      outline-color: lightseagreen;
+      border: 2px solid lightseagreen;
+      margin-left: 5px;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
