@@ -15,14 +15,21 @@
       flex-direction: row;
       align-items: end;
       font-size: 30px;
-      margin: 5px;
+
       &__content {
+        min-width: 200px;
         height: 30px;
+        width: 80%;
         font-family: c.$primaryFont;
-        font-size: 18px;
+        font-size: 20px;
         outline: auto;
         outline-color: lightseagreen;
         border: 6px solid lightseagren;
+        background-color: white;
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 3px;
+        padding-top: 2px;
       }
       &__done-button {
         margin: 0;
@@ -30,11 +37,6 @@
         width: 35px;
         accent-color: lightseagreen;
         cursor: pointer;
-      }
-      &__edit-button {
-        @include c.list-buttons;
-        background-color: darkgoldenrod;
-        outline-color: darkgoldenrod;
       }
       &__delete-button {
         @include c.list-buttons;
