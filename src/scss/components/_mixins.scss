@@ -2,7 +2,7 @@
 @use "../components/font" as f;
 
 @mixin list-buttons {
-  height: 28px;
+  height: 30px;
   width: 60px;
   cursor: pointer;
   font-family: f.$primaryFont;

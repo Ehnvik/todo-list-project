@@ -1,14 +1,14 @@
 import { Todo } from "./models/input";
 
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
+const formInput = document.getElementById("content");
 
 window.addEventListener("load", () => {
   const newTodoForm = document.querySelector("#new-todo-form");
 
   newTodoForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("hej");
-    const formInput = document.getElementById("content");
+
     let todo = new Todo(formInput.value, false);
 
     formInput.value = "";
