@@ -51,6 +51,7 @@ function showTodos() {
     if (todo.content < "a" && todo.content < 1) {
       todos = todos.filter((listItem) => listItem != todo);
       localStorage.setItem("todos", JSON.stringify(todos));
+      alert("Please add something to your todo first");
       showTodos();
     }
 
